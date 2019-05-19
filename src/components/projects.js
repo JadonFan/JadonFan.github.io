@@ -37,7 +37,7 @@ class Projects extends Component {
 							<div className="projectpane">
 								<img src="images/madmanicon.png" alt="Classics" className="image img-fluid" />
 							  	<div className="overlay">
-							    	<div className="text">
+							    	<div class="text">
 							    		<h1> Madman </h1>
 							    		<p style={{fontSize: 13}}> An unique desktop TPS game written in Python </p>
 							    		<button className="btn btn-primary learnmore" onclick="createProjectInfoBox(this, 'Madman')"> Learn More </button>
