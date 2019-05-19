@@ -18,7 +18,7 @@ class Navigation extends Component {
 			// Keep the vanilla JS...
 			var popUpImg = document.createElement("IMG");
 			popUpImg.setAttribute("id", "popUp");
-			popUpImg.setAttribute("src", "./images/thumbsup.gif");
+			popUpImg.setAttribute("src", "images/thumbsup.gif");
 			popUpImg.setAttribute("alt", "Thumbs Up Surprise");
 			popUpImg.style.position = "absolute";
 			popUpImg.style.top = "-300px";

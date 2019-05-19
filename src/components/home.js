@@ -14,28 +14,28 @@ class Home extends Component {
 				<div className="layoutAC1" style={{backgroundColor: "#00303F"}}>			
 					<a href="https://github.com/JadonFan">
 						<button type="button" className="btn stdbutton" style={{backgroundColor: 'white'}}>
-							<img style={{width:60}} src="./images/GitLogo.png" alt="Git" />
+							<img style={{width:60}} src="images/GitLogo.png" alt="Git" />
 							<br/> <p> Repository  </p>
 						</button>
 					</a>
 
 					<a href="https://play.google.com/store/apps/details?id=c.jadon.tictactoe">
 						<button type="button" className="btn stdbutton" style={{backgroundColor: 'white'}}>
-							<img style={{width:60}} src="./images/emaillogo.png" alt="MyAndroidApp" />
+							<img style={{width:60}} src="images/MyAppLogo.png" alt="MyAndroidApp" />
 							<br/> <p> My Android App </p>
 						</button>
 					</a>
 
 					<a href="https://www.linkedin.com/in/jiajun-fan-414993141/">
 						<button type="button" className="btn stdbutton" style={{backgroundColor: 'white'}}>
-							<img style={{width:60}} src="./images/LinkedInLogo.png" alt="LinkedIn" />
+							<img style={{width:60}} src="images/LinkedInLogo.png" alt="LinkedIn" />
 							<br/> <p> LinkedIn </p>
 						</button>
 					</a>
 
 					<a href="https://waterlooworks.uwaterloo.ca/home.htm">
 						<button type="button" className="btn stdbutton" style={{backgroundColor: 'white'}}>
-							<img style={{width:60}} src="./images/UWLogo.png" alt="WaterlooWorks" />
+							<img style={{width:60}} src="images/UWLogo.png" alt="WaterlooWorks" />
 							<br/> <p> WaterlooWorks </p>
 						</button>
 					</a>

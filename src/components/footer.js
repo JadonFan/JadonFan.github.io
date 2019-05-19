@@ -7,7 +7,7 @@ class Footer extends Component {
 				<div id="mainfootertext">
 					<br/> 
 					<a href="mailto:j53fan@edu.uwaterloo.ca?Subject=Regarding%20Your%20Website" target="_top"> 
-						<img src="./images/emaillogo.png" alt="email" height="30" width="30" /> Email 
+						<img src="images/emaillogo.png" alt="email" height="30" width="30" /> Email 
 					</a> 
 					<br/> 
 				</div>
