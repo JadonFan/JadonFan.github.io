@@ -21,7 +21,7 @@ class Home extends Component {
 
 					<a href="https://play.google.com/store/apps/details?id=c.jadon.tictactoe">
 						<button type="button" className="btn stdbutton" style={{backgroundColor: 'white'}}>
-							<img style={{width:60}} src="./images/MyAppLogo.png" alt="MyAndroidApp" />
+							<img style={{width:60}} src="./images/emaillogo.png" alt="MyAndroidApp" />
 							<br/> <p> My Android App </p>
 						</button>
 					</a>
