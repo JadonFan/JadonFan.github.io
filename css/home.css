@@ -1,0 +1,22 @@
+.layoutAC1 {
+	position: relative;
+	margin-top: 0px;
+	top: 100px;
+	height: 110%;
+	float: left;
+	width: 20%;
+	padding: 12px 12px 0 12px;
+ }
+
+.layoutAC1 a {
+	float: left;
+	display: inline-block;
+}
+
+.layoutAC2 {
+	position: relative;
+	top: 120px;
+	float: right;
+	width: 70%;
+	padding: 10px;
+}

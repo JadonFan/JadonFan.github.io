@@ -1,0 +1,56 @@
+@media screen and (max-width: 1350px) {
+	.stdbutton {
+		margin-top: 10px;
+		margin-left: 25px;
+		padding-left: 10px;
+		height: 70px;
+		width: 70px;
+		text-decoration-style: none;
+		color: black;
+	}
+
+	.stdbutton img {
+		float: left;
+		height: 60px;
+	}
+
+	.stdbutton p {
+		display: none;
+		font-size: 14px;
+	}
+
+	.stdbutton:visited {
+		text-decoration-style: none;
+		color: black;
+	}
+}
+
+@media screen and (min-width: 1350px) {
+	.stdbutton {
+		margin-left:20px;
+		margin-top:10px;
+		padding-left: 10px;
+		height: 70px;
+		width: 210px;
+		text-decoration-style: none;
+		color: black;
+	}
+
+	.stdbutton img {
+		float: left;
+		height: 60px;
+		font-size: 30px;
+	}
+
+	.stdbutton p {
+		padding-left: 12.5px;
+		padding-right: 12.5px;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.stdbutton:visited {
+		text-decoration-style: none;
+		color: black;
+	}
+}
