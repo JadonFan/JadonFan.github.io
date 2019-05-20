@@ -1,9 +1,10 @@
 .projectpane {
   position: relative;
+  display: inline-block;
   margin: 20px;
   padding: 20px;
-  width: 250px;
-  height: 240px;  
+  height: 200px;
+  width: 200px;
   border: dashed;
   border-width: 1px;
 }
@@ -32,11 +33,11 @@
 .text {
   color: white;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 33%;
+  left: 33%;
+  -webkit-transform: translate(-25%, -25%);
+  -ms-transform: translate(-25%, -25%);
+  transform: translate(-25%, -25%);
   text-align: center;
 }
 
@@ -57,9 +58,5 @@ hr {
 
 #projectinfobox {
   display: none;
-  margin:10px;
-}
-
-.col-md-2 {
-  margin: 20px;
+  margin: 10px;
 }
