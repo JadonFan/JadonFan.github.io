@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+/**
+ * Renders the footer for every page on my website
+ * @extends Component
+ * @author Jadon
+ */
 class Footer extends Component {
 	render() {
 		return (

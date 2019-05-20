@@ -1,79 +1,22 @@
 import React, { Component } from 'react';
+import Tag  from './tag';
 
+/**
+ * Contains information to perspective employers, and really anyone who wants to know me better!
+ * @extends Component
+ * @author Jadon
+ */
 class About extends Component {
 	libsFrames = ["JDBC", "JPA/Hibernate", "Spring", "JavaFX", "Bootstrap", "React", "Django", "Numpy", "Pygame"];
 	tools = ["Git", "Jira", "Jenkins", "JMeter", "Android SDK", "Postman"];
+	courses = ["Data Structures and Algorithms", "Introduction to Programming", "Digital Circuits and Systems", 
+		"Digital Computers", "Advanced Calculus I", "Numerical Methods"];
+	interests = ["Chess", "Cooking", "Table Tennis", "Coding", "Gardening"];
 
-	constructor(props) {
-		super(props);
-		this.myRef = React.createRef();
-		this.handleMouseHoverOnTag = this.handleMouseHoverOnTag.bind(this);
-		this.state = {
-			isHovering: false
-		};
-	}
-
-	handleMouseHoverOnTag() {
-		this.setState(this.toggleHoverState);
-	}
-
-	toggleHoverState(state) {
-	    return { isHovering: !state.isHovering };
-	}
-
-	monthDiff(d1, d2) {
-		var months = (d2.getFullYear() - d1.getFullYear()) * 12;
-		months -= d1.getMonth() + 1;
-		months += d2.getMonth();
-		return months <= 0 ? 0 : months;
-	}
-
-	getTimeSinceStart(expSince="unknown") {
-		var expTimeFormat = expSince;
-		if (expSince instanceof Date) { 	// convert the text detailing the experience time to a suitable format when displayed
-			var today = new Date();
-			var monthsDiff = this.monthDiff(expSince, today);
-			if (monthsDiff < 12) {
-				expTimeFormat = `${monthsDiff} months`;
-			} else if (monthsDiff % 12 === 0) {
-				expTimeFormat = `${Math.floor(monthsDiff / 12)} years`; 
-			} else {
-				expTimeFormat = `${Math.floor(monthsDiff / 12)} years and ${monthsDiff % 12} months`; 
-			}
-		} 
-
-		return expTimeFormat;
-	}
-
-	getSQLDetails(name) {
-		if (name.match(new RegExp(".*SQL.*"))) {
-			var SQLDetails = <> <b>Variations</b>: mySQL, Oracle SQL, PostgreSQL <br/> </>;
-			return SQLDetails;
-		} 
-
-		return;
-	}
-
-	createTagDetails(name, expSince="unknown", profLevel="unknown", ...projects) { 
-		return (
-			<>
-				<b>Experience</b>: {this.getTimeSinceStart(expSince)} 
-				<br/>
-				<b>Comfortability</b>: {profLevel}
-				<br/>
-				{this.getSQLDetails(name)} 
-				<b>Relevant Projects</b>: 
-				<br/>
-				{Array.from(projects).map(projectName => <> &nbsp; &nbsp; &#x25CF; {projectName} <br/> </>)}
-			</>
-		);
-	}
-
-	// TODO move the language tag details into an object of objects
 	render() {
 		return (
 			<div id="aboutbody">
-				<form className="form-inline" style={{float: "right",marginRight: 5}}>
+				<form className="form-inline" style={{float: "right", marginRight: 5}}>
 					<input className="form-control mr-sm-2" style={{width: 250}} type="search" /> 
 					<button className="btn btn-success" type="submit"> Search </button>
 				</form>
@@ -84,21 +27,24 @@ class About extends Component {
 					<br/>
 					<h4> Languages </h4>
 					<ul className="knowmetag hoverabletag"> 
-						<li onMouseEnter={this.handleMouseHoverOnTag} onMouseLeave={this.handleMouseHoverOnTag}> 
-							{this.state.isHovering && <span className="tagDetails"> {this.createTagDetails("Python", new Date(2015, 8, 1), 9, 'Third person shooting game with 2D and 3D graphics', 'Sudoku on the command line interface', 'Assignment test scripts on the bash shell', 'Various university assignments in programming courses')} </span>} Python 
-						</li> 					 
-						<li onmouseover="showTagDetails(this, new Date(2018, 1, 1), 9, 'Student planner desktop app', 'Tic-tac-toe and card game app for Android', 'Automated RMI and RESTful API tests for an EMR software')" onmouseout="hideTagDetails(this)"> <span> </span> Java </li>
-						<li onmouseover="showTagDetails(this, new Date(2017, 8, 7), 8, 'Controllable and movable Arduino pitching machine', 'Various university assignments in programming courses')" onmouseout="hideTagDetails(this)"> <span> </span> C++ </li>
-						<li onmouseover="showTagDetails(this, new Date(2019, 0, 15), 7)" onmouseout="hideTagDetails(this)"> <span> </span> Javascript </li>
-						<li onmouseover="showTagDetails(this, new Date(2019, 0, 10), 6)" onmouseout="hideTagDetails(this)"> <span> </span> SQL </li>
-						<li onmouseover="showTagDetails(this, new Date(2019, 0, 24), 7)" onmouseout="hideTagDetails(this)"> <span> </span> HTML/CSS </li>
+						<Tag name="Python" />					 
+						<Tag name="Java" />
+						<Tag name="CPP" />
+						<Tag name="Javascript" />
+						<Tag name="SQL" />
+						<Tag name="HTMLCSS" />
 					</ul>
 				</div>
 				<br/>
 				<div style={{margin: 10}}>
 					<h4> Libraries and Frameworks </h4>
 					<ul className="knowmetag hoverabletag"> 
-						{this.libsFrames.map(name => <li onmouseover="showTagDetailsLess(this)" onmouseout="hideTagDetails(this)" key={name}> <span> </span> {name} </li>)}
+						{
+							this.libsFrames.map(name => <li key={name}> 
+							<span> </span> 
+							{name} 
+							</li>)
+						}
 					</ul>
 				</div>
 				<br/>
@@ -117,24 +63,15 @@ class About extends Component {
 							<br/>
 							&nbsp; &nbsp; &nbsp; Class of 2022 
 						</p>
-						<ul className="knowmetag hoverabletag"> 
-							<li className="expandedtag"> Data Structures and Algorithms </li>  
-							<li className="expandedtag"> Introduction to Programming </li>
-							<li className="expandedtag"> Digital Circuits and Systems </li>
-							<li className="expandedtag"> Digital Computers </li>
-							<li className="expandedtag"> Advanced Calculus I </li>
-							<li className="expandedtag"> Numerical Methods </li>
+						<ul className="knowmetag"> 
+							{this.courses.map(course => <li className="expandedtag" key={course}> {course} </li>)}
 						</ul>
 				</div>
 				<hr/>
 				<div style={{margin: 10}}>
 					<h1> Interests </h1>
 					<ul className="knowmetag"> 
-						<li> Chess </li>  
-						<li> Cooking </li>
-						<li> Table Tennis </li>
-						<li> Programming </li>
-						<li> Gardening </li>
+						{this.interests.map(interest => <li key={interest}> {interest} </li>)}
 					</ul>
 				</div>
 				<hr/>

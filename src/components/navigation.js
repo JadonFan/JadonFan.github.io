@@ -5,6 +5,12 @@ import About from "./about";
 import Projects from "./projects";
 import Academics from "./academics";
 
+/**
+ * Renders the navigation bar 
+ * Click on the "more" button for a surprise!!!
+ * @extends Component
+ * @author Jadon
+ */
 class Navigation extends Component {
 	navBoxStyle = {
 		textDecoration: "none",
