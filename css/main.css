@@ -34,7 +34,7 @@ body {
 	position: relative;
 	height: 1200px;
 	bottom: 430px;
-	margin-top: 550px; /* move up and down along with the root */
+	margin-top: 535px; /* move up and down along with the root */
 }
 
 footer {

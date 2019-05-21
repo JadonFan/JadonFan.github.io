@@ -5,6 +5,7 @@
 	padding: 20px;
 	height: 200px;
 	width: 200px;
+	background-color: white;
 	border: solid;
 	border-width: 1px;
 	border-radius: 6px;
@@ -72,12 +73,29 @@ hr {
 	transition: top 1.2s ease-out, opacity 1.2s ease-out;
 }
 
+.projectinfo > * {
+	padding: 10px 30px 10px 30px;
+}
+
 .projectinfo button {
 	width: 150px;
 	height: 30px;
+	margin-top: 10px;
 }
 
 .projectinfo .btn-secondary {
 	color: black;
 	background-color: #D3D3D3;
+	float: right;
+}
+
+.projectinfotitlebox {
+	display: inline-block;
+	width: 100%;
+	background-color: #9400D3;
+	border: solid;
+	border-width: 2.5px;
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
