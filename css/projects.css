@@ -84,6 +84,14 @@ hr {
 	font-size: 12px;
 }
 
+.projectinfo button a {
+	color: black;
+}
+
+.projectinfo button:hover a {
+	color: white;
+}
+
 .projectinfo .btn-secondary {
 	color: black;
 	background-color: #D3D3D3;
