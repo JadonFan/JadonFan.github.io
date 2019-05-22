@@ -111,3 +111,21 @@ hr {
 	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.disabled {
+	opacity: 1 !important;
+}
+
+.btn-group-lg button {
+	height: 40px !important;
+}
+
+.ratingscorebtn {
+	/* set to important to prevent Bootstrap from overriding some properties */
+	width: 60px !important;
+	background-color: rgba(255, 166, 0, 0.671) !important;
+}
+
+.ratingscorebtn:hover {
+	background-color: #DC143C !important;
+}
