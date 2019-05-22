@@ -6,31 +6,11 @@
 	float: left;
 	width: 80px;
 	padding: 12px 12px 0 12px;
-	transition-delay: 500ms;
 	transition: width 500ms ease-in;
+	-webkit-transition: width 500ms ease-in;
+    -o-transition: width 500ms ease-in;
+    -moz-transition: width 500ms ease-in;
  }
-
-.layoutAC1 > a div span, .layoutAC1 > form {
-	display: none;
-}
-
-@media screen and (min-width: 975px) {
-	.layoutAC1:hover {
-		width: 20%;
-	}
-
-	.layoutAC1:hover > a div span, .layoutAC1:hover > form {
-		display: inline-block;
-	}
-}
-
-.layoutAC2 {
-	position: relative;
-	top: 120px;
-	float: right;
-	width: 70%;
-	padding: 10px;
-}
 
 .extlinkref {
 	display: inline-block;
@@ -40,6 +20,9 @@
 	text-decoration-style: none;
 	margin-bottom: 10px;
 	transition: background-color 1.2s ease;
+	-webkit-transition: background-color 1.2s ease;
+    -o-transition: background-color 1.2s ease;
+    -moz-transition: background-color 1.2s ease;
 	border-radius: 25px;
 }
 
@@ -51,13 +34,43 @@
 	padding: 5;
 	width: 100%;
 	height: auto;
-	display: inline-block;
 }
 
-.extbar span {
+.extbar text {
 	padding-left: 12.5px;
 	padding-right: 12.5px;
 	text-align: center; 
 	color: white;
 	font-size: 14px;
+}
+
+.extbar img {
+	width: 60px;
+	padding: 10px;
+}
+
+@media screen and (min-width: 975px) {
+	.layoutAC1:hover {
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 975px) {
+	.layoutAC1 > a div text, .layoutAC1 > form {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.layoutAC1 {
+		width: 20%;
+	}
+}
+
+.layoutAC2 {
+	position: relative;
+	top: 120px;
+	float: right;
+	width: 70%;
+	padding: 10px;
 }
