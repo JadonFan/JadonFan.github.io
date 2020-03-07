@@ -12,9 +12,9 @@ class About extends Component {
 	libsFrames = ["React", "Bootstrap", "Spring Boot", "Java Servlet", "JDBC", "Cloud Firestore", "JPA/Hibernate", 
 	"Android SDK", "RxJava", "Dagger", "Retrofit", "JUnit", "Espresso", "JavaFX", "Pygame", "Numpy"];
 	tools = ["Git", "Jira", "Jenkins", "JMeter", "Postman"];
-	courses = ["Compiler",  "System Programming and Concurrency", "Embedded Systems", "Instrumentation and Prototyping", 
-		"Data Structures and Algorithms", "Introduction to Programming", "Digital Circuits and Systems", 
-		"Digital Computers", "Advanced Calculus I", "Numerical Methods"];
+	courses = ["Compilers", "Digital Hardware Systems", "Analog Control Systems", "System Programming and Concurrency", "Embedded Systems", 
+		"Instrumentation and Prototyping", "Data Structures and Algorithms", "Introduction to Programming", "Digital Circuits and Systems", 
+		"Digital Computers", "Numerical Methods"];
 	interests = ["Chess", "Cooking", "Table Tennis", "Coding", "Gardening"];
 
 	render() {
@@ -89,7 +89,7 @@ class About extends Component {
 							cliché, I enjoy the flexibility of what can be accomplished through programming. On one day, I
 							might be writing code for a software that will advance medical technologies or for a game with gameplay
 							mechanics and plots to my liking. On another day, I might be programming an embedded microprocessor, 
-							like I am currently doing in ECE298, to remotely adjust fan speeds by clapping your hands. On the
+							like I did in ECE298, to remotely adjust fan speeds by clapping your hands. On the
 							other hand, I am curious about how hardware is used to run software. Since I was first introduced to
 							programming back in high school, I have wondered exactly how a series of words on a screen can
 							instruct a computing device to do something, and how a computing device is able to store and follow  
