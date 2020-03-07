@@ -11,7 +11,7 @@ class Projects extends Component {
 		Finance: {
 			description: "An Android spending tracker app to help you make better financial decisions",
 			projectFilePath: "",
-			iconPath: "images/finance_app_icon.png",
+			iconPath: "images/finance_app_icon.jpg",
 			downloadRequirements: "Requires Android Marshmallow or Later",
 			features: [],
 			techsUsed: []
