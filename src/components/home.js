@@ -46,7 +46,7 @@ class Home extends Component {
 					<a className="extlinkref" href="https://play.google.com/store/apps/details?id=c.jadon.tictactoe" style={{textDecorationLine: "none"}}>
 						<div className="extbar">
 							<img src="images/MyAppLogo.png" alt="MyAndroidApp" />
-							{this.state.isShowing && <text> Android App </text>}
+							{this.state.isShowing && <text> Tic-Tac-Toe App </text>}
 						</div>
 					</a>
 
