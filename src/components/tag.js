@@ -25,6 +25,11 @@ class Tag extends Component {
 			startDate: new Date(2019, 9, 1),
 			projects: ['Budgeting app']
 		},
+		Ruby: {
+			altName: "Ruby",
+			startDate: new Date(2020, 4, 28),
+			projects: []
+		},
 		C: {
 			altName: "C", 
 			startDate: new Date(2018, 1, 15),

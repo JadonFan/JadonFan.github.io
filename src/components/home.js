@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Typed from 'react-typed';
 
 /**
  * Contains the home page, which includes hyperlinks to relevant external sites, my Google calendar, and what not
@@ -34,23 +35,23 @@ class Home extends Component {
 	render() {
 		// TODO separate into different React components 
 		return (
-			<div>
-				<div className="layoutAC1" onMouseEnter={this.handleShowBar} onMouseLeave={this.handleLeaveBar} style={{backgroundColor: "#00303F"}}>
-					<a className="extlinkref" href="https://github.com/JadonFan" style={{textDecorationLine: "none"}}>
+			<div id="homebody">
+				<div className="layoutAC1" onMouseEnter={this.handleShowBar} onMouseLeave={this.handleLeaveBar} style={{backgroundColor: "#505050"}}>
+					<a className="extlinkref" href="https://github.com/JadonFan" target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "none"}}>
 						<div className="extbar">
 							<img src="images/GitLogo.png" alt="Git" />
 							{this.state.isShowing && <text> Repository </text>}
 						</div>
 					</a>
 
-					<a className="extlinkref" href="https://play.google.com/store/apps/details?id=c.jadon.tictactoe" style={{textDecorationLine: "none"}}>
+					<a className="extlinkref" href="https://play.google.com/store/apps/details?id=c.jadon.tictactoe" target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "none"}}>
 						<div className="extbar">
 							<img src="images/MyAppLogo.png" alt="MyAndroidApp" />
 							{this.state.isShowing && <text> Tic-Tac-Toe App </text>}
 						</div>
 					</a>
 
-					<a className="extlinkref" href="https://www.linkedin.com/in/jiajun-fan-414993141/" style={{textDecorationLine: "none"}}>
+					<a className="extlinkref" href="https://www.linkedin.com/in/jiajun-fan-414993141/" target="_blank" rel="noopener noreferrer" style={{textDecorationLine: "none"}}>
 						<div className="extbar">
 							<img src="images/LinkedInLogo.png" alt="LinkedIn" />
 							{this.state.isShowing && <text> LinkedIn </text>}
@@ -71,8 +72,13 @@ class Home extends Component {
 				</div>
 
 				<div className="layoutAC2">
-					<iframe src="https://calendar.google.com/calendar/embed?src=jdsare%40gmail.com&ctz=America%2FToronto" style={{border:0}}
-					width="800" height="600" frameBorder="0" scrolling="no" title="Calendar"></iframe>
+					<Typed style={{fontSize: 23, fontFamily: "Times New Roman"}} strings={["\"If you are always trying to be normal you will never know how amazing you can be\" &mdash; Maya Angelou",
+					"\"After climbing a great hill, one only finds that there are many more hills to climb\" &mdash; Nelson Mandela"]} typeSpeed={70} backSpeed={150} loop/> 
+					<br />
+					<br />
+					<img src="images/nightsky.jpg" alt="UW Night Sky" width="100%" height="auto"/>
+					{/* <iframe src="https://calendar.google.com/calendar/embed?src=jdsare%40gmail.com&ctz=America%2FToronto" style={{border:0}}
+					width="800" height="600" frameBorder="0" scrolling="no" title="Calendar"></iframe>  */}
 				</div>
 			</div>
 		);

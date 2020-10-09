@@ -3,7 +3,7 @@ import { Route, NavLink, BrowserRouter } from "react-router-dom";
 import Home from "./home";
 import About from "./about";
 import Projects from "./projects";
-import Academics from "./academics";
+import Milestones from "./milestones";
 
 /**
  * Renders the navigation bar 
@@ -82,7 +82,7 @@ class Navigation extends Component {
 							<li> <NavLink to="/" style={this.navBoxStyle}>          Home      </NavLink> </li>
 							<li> <NavLink to="/about" style={this.navBoxStyle}>     About     </NavLink> </li>
 							<li> <NavLink to="/projects" style={this.navBoxStyle}>  Projects  </NavLink> </li>
-							<li> <NavLink to="/academics" style={this.navBoxStyle}> Academics </NavLink> </li>
+							<li> <NavLink to="/milestones" style={this.navBoxStyle}> Milestones </NavLink> </li>
 							<li onClick={this.handleSurprise}> <a id="surprise" style={this.navBoxStyle}> More </a> </li>
 						</ul>
 	        		</nav>
@@ -91,7 +91,7 @@ class Navigation extends Component {
         			<Route exact path="/" component={Home} />
         			<Route path="/about" component={About} />
         			<Route path="/projects" component={Projects} />
-        			<Route path="/academics" component={Academics} />
+        			<Route path="/milestones" component={Milestones} />
 	        	</div>
 	     	</BrowserRouter>
      	);

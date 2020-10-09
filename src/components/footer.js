@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { IconButton } from '@material-ui/core';
+import { Email } from '@material-ui/icons';
 
 /**
  * Renders the footer for every page on my website
@@ -11,15 +13,17 @@ class Footer extends Component {
 			<footer>
 				<div id="mainfootertext">
 					<br/> 
-					<a href="mailto:j53fan@edu.uwaterloo.ca?Subject=Regarding%20Your%20Website" target="_top"> 
-						<img src="images/emaillogo.png" alt="email" height="30" width="30" /> Email 
+					<a href="mailto:jdsare@gmail.com?Subject=Regarding%20Your%20Website" target="_top"> 
+						<IconButton aria-label="delete" style={{color: "white"}}>
+							<Email style={{fontSize: 50}}/>
+						</IconButton>
 					</a> 
 					<br/> 
 				</div>
 
-				<br/> <br/> <br/> <br/> 
+				<br/> <br/> <br/>
 				<p style={{fontSize:13}}> 
-					Jadon Fan &#169; 2019. Used under the permission of the author with acknowledgement to those who helped the author with the site. 
+					Jadon Fan, 2019 - 2020
 				</p>
 			</footer> 
 		);

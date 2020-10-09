@@ -9,8 +9,8 @@ import FunFacts  from './funfacts';
  * @author Jadon
  */
 class About extends Component {
-	libsFrames = ["React", "Bootstrap", "Spring Boot", "Java Servlet", "JDBC", "Cloud Firestore", "JPA/Hibernate", 
-	"Android SDK", "RxJava", "Dagger", "Retrofit", "JUnit", "Espresso", "JavaFX", "Pygame", "Numpy"];
+	libsFrames = ["React", "Ruby on Rails", "Django", "Java Servlet", "Apollo Client", "JDBC", "JPA/Hibernate", 
+	"Android SDK", "RxJava", "Dagger", "Retrofit", "JUnit", "Espresso", "JavaFX"];
 	tools = ["Git", "Jira", "Jenkins", "JMeter", "Postman"];
 	courses = ["Compilers", "Digital Hardware Systems", "Analog Control Systems", "System Programming and Concurrency", "Embedded Systems", 
 		"Instrumentation and Prototyping", "Data Structures and Algorithms", "Introduction to Programming", "Digital Circuits and Systems", 
@@ -32,7 +32,8 @@ class About extends Component {
 					<br/>
 					<h4> Languages </h4>
 					<ul className="knowmetag hoverabletag"> 
-						<Tag name="Python" />					 
+						<Tag name="Python" />	
+						<Tag name="Ruby" />				 
 						<Tag name="Java" />
 						<Tag name="Kotlin" />
 						<Tag name="C" />
@@ -79,7 +80,7 @@ class About extends Component {
 						<p style={{textAlign: "left", fontSize: 15}}>
 							<img src="images/jadon.png" width="250" height="250" alt="Jadon" style={{float: "left", marginRight: 20}} />
 							I am Jadon Fan. I study Computer Engineering at the University of Waterloo in Ontario, Canada. I am part of 
-							the graduating class of 2022 and currently in my second year of study. I am part of the University's 
+							the graduating class of 2022 and currently in my third year of study. I am part of the University's 
 							co-op program, which means that I alternate between study terms and work terms every 4 months. I hope 
 							you enjoy exploring my website, which I am using to create my dream website and gain experience on web development. 
 							I am always open to feedback on how I can improve the website, so please feel free to email me, or 

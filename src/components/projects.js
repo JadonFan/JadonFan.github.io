@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CloudDownload, GitHub } from '@material-ui/icons';
 // import { TransitionGroup } from 'react-transition-group';
 
 /**
@@ -10,14 +11,16 @@ class Projects extends Component {
 	projects = {
 		Finance: {
 			description: "An Android spending tracker app to help you make better financial decisions",
+			projectRepoUrl: "https://github.com/JadonFan/Budgeting",
 			projectFilePath: "",
 			iconPath: "images/finance_app_icon.jpg",
 			downloadRequirements: "Requires Android Marshmallow or Later",
 			features: [],
-			techsUsed: []
+			techsUsed: ["Dagger", "Kotlin Corountines", "LiveData", "Cloud Firestore", "Room"]
 		}, 
 		Planner: {
 			description: "A Java desktop app to help students organize their life",
+			projectRepoUrl: "https://github.com/JadonFan/Planner",
 			projectFilePath: "files/Planner-all.jar",
 			iconPath: "images/plannericon.png",
 			downloadRequirements: "Requires at least Java 8",
@@ -29,6 +32,7 @@ class Projects extends Component {
 		},
 		Classics: {
 			description: "An Android app to play some classic games against a friend or computer",
+			projectRepoUrl: "https://github.com/JadonFan/Casual-Games",
 			projectFilePath: "",
 			iconPath: "images/MyAppLogo.png",
 			downloadRequirements: "Requires Android Marshmallow or later",
@@ -39,6 +43,7 @@ class Projects extends Component {
 		},
 		Madman: {
 			description: "An unique desktop TPS game written in Python",
+			projectRepoUrl: "https://github.com/JadonFan/MazeShooter",
 			projectFilePath: "",
 			iconPath: "images/madmanicon.png",
 			downloadRequirements: "Requires Python 3 (soon to be 3.6+ for f strings)",
@@ -47,6 +52,7 @@ class Projects extends Component {
 		},
 		Pitcher: {
 			description: "An Arduino-powered pitching machine on movable wheels written in C++",
+			projectRepoUrl: "",
 			projectFilePath: "",
 			iconPath: "images/arduino.png",
 			downloadRequirements: "",
@@ -62,8 +68,8 @@ class Projects extends Component {
 		this.state = {
 			isShowing: false,  // we could have used the shownProjectName key instead to indicate isShowing since 
 							   // '' is falsy but this is more readable in my opinion...
-			shownProjectName: undefined  
-		}
+			shownProjectName: "Finance"
+		};
 	}
 
 	handleShowingProjectInfo(projectName) {
@@ -103,7 +109,7 @@ class Projects extends Component {
 			</div>
 		);
 	}
-	
+
 	render() {
 		const project = this.projects[this.state.shownProjectName];
 
@@ -115,24 +121,26 @@ class Projects extends Component {
 					</div>
 
 					<div className="row">
-						{ this.state.isShowing && 
-							<div className="projectinfo">
+						{	<div className="projectinfo">
 								<div className="projectinfotitlebox">
 									<text style={{fontSize: 35, color: "white"}}> 
 										<b> {this.state.shownProjectName} </b>
 									</text>
-									<button className="btn btn-secondary" onClick={this.handleHidingProjectInfo}> 
-										Show Less 
-									</button>
-									<button className="btn btn-secondary" style={{marginRight: 10}}> 
-										<a href={project.projectFilePath} 
-										style={{textDecoration: "none"}} download> 
-											Download Project 
-										</a> 
-									</button>
+									<a href={project.projectFilePath} style={{textDecoration: "none"}} download> 
+										<button className="btn btn-secondary" style={{marginRight: 10}}> 
+											<CloudDownload fontSize="large"/>
+											&nbsp;&nbsp; Download
+										</button>
+									</a> 
+									<a href={project.projectRepoUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}> 
+										<button className="btn btn-secondary" style={{marginRight: 10}}> 
+											<GitHub fontSize="large"/>
+											&nbsp;&nbsp; GitHub
+										</button>
+									</a> 
 								</div>
 		
-								<div style={{color: "white"}}>
+								<div style={{position: "relative", color: "white"}}>
 									<p> <strong> {project.downloadRequirements} </strong> </p>
 									<h4> Features </h4>
 									<ul>
@@ -154,6 +162,10 @@ class Projects extends Component {
 											</button>
 											)
 										} 
+									</div>
+
+									<div style={{position: "absolute", bottom: 0, textAlign: "center", height: "auto", width: "100%", fontSize: 18}}>
+										<span class="to-top" onClick={() => window.scroll({top: 0, left: 0, behavior: 'smooth'})}> Back to Top </span>
 									</div>
 								</div>
 							</div>
