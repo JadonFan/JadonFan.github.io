@@ -1,0 +1,166 @@
+.projectpane {
+	position: relative;
+	display: inline-block;
+	margin: 20px 20px 0 20px;
+	padding: 20px;
+	height: 200px;
+	width: 200px;
+	background-color: white;
+	border: solid;
+	border-width: 1px;
+	border-radius: 6px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image {
+	position: relative;
+	width: 100%;
+	height: 100%;  
+}
+
+.overlay {
+	position: absolute;
+	border-radius: 6px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: .8s ease;
+	background-color: grey;
+}
+
+.projectpane:hover .overlay {
+  	opacity: 0.85;
+}
+
+.text {
+	color: white;
+	position: absolute;
+	top: 33%;
+	left: 33%;
+	-webkit-transform: translate(-25%, -25%);
+	-ms-transform: translate(-25%, -25%);
+	transform: translate(-25%, -25%);
+	text-align: center;
+}
+
+.learnmore {
+	width: 100%;
+	height: 40px;
+	font-size: 13px;
+	color:black;
+	background-color:#2D96EE;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333; 
+    width: 100%;
+}
+
+.projectinfo {
+	height: 800px;
+	width: 100%;
+	overflow: auto;
+	border: solid;
+	border-width: 1px 0 1px 0;
+	font-size: 13px;
+	background-color: #0d70e0;
+	z-index: 50;
+	transition: top 1.2s ease-out, opacity 1.2s ease-out;
+	-webkit-transition: top 1.2s ease-out, opacity 1.2s ease-out;
+    -o-transition: top 1.2s ease-out, opacity 1.2s ease-out;
+    -moz-transition: top 1.2s ease-out, opacity 1.2s ease-out;
+}
+
+.projectinfo > * {
+	padding: 10px 30px 10px 30px;
+}
+
+.projectinfo button {
+	width: 150px;
+	height: 30px;
+	margin-top: 10px;
+}
+
+.projectinfo button a {
+	color: black;
+}
+
+.projectinfo button:hover a {
+	color: white;
+}
+
+.projectinfo .btn-secondary {
+	color: black;
+	background-color: #D3D3D3;
+	height: fit-content;
+	width: fit-content;
+	font-size: 15px;
+	float: right;
+}
+
+.projectinfotitlebox {
+	width: 100%;
+	background-color: #505050;
+	border: solid;
+	border-width: 2.5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.disabled {
+	opacity: 1 !important;
+}
+
+.btn-group-lg button {
+	height: 40px !important;
+}
+
+.ratingscorebtn {
+	/* set to important to prevent Bootstrap from overriding some properties */
+	width: 60px !important;
+	background-color: rgba(136, 255, 0, 0.685) !important;
+}
+
+.ratingscorebtn:hover {
+	background-color: #DC143C !important;
+}
+
+.to-top {
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+	padding-top: 1.8em;
+	position: absolute;	
+	border-color: white;
+	text-decoration: none;
+	transition: all .3s ease-out;
+}
+
+.to-top:before {
+	content: '▲';
+	position: absolute;
+	right: 110%;
+	margin-left: s-.7em;
+	border: solid .13em white;
+	border-radius: 5em;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.3em;
+	border-color: inherit;
+	transition: transform .5s ease-in;
+}
+
+.to-top:hover {
+	color: lightblue;
+	border-color: lightblue;
+}
+
+.to-top:hover:before {
+	transform: rotate(360deg);
+}

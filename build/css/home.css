@@ -1,0 +1,76 @@
+.layoutAC1 {
+	position: relative;
+	margin-top: 0px;
+	top: 100px;
+	height: 900px;
+	float: left;
+	width: 80px;
+	padding: 12px 12px 0 12px;
+	transition: width 500ms ease-in;
+	-webkit-transition: width 500ms ease-in;
+    -o-transition: width 500ms ease-in;
+    -moz-transition: width 500ms ease-in;
+ }
+
+.extlinkref {
+	display: inline-block;
+	width: 100%;
+	color: black;
+	text-decoration: none;
+	text-decoration-style: none;
+	margin-bottom: 10px;
+	transition: background-color 1.2s ease;
+	-webkit-transition: background-color 1.2s ease;
+    -o-transition: background-color 1.2s ease;
+    -moz-transition: background-color 1.2s ease;
+	border-radius: 25px;
+}
+
+.extlinkref:hover {
+	background-color:#1E90FF;
+}
+
+.extbar {
+	padding: 5;
+	width: 100%;
+	height: auto;
+}
+
+.extbar text {
+	padding-left: 12.5px;
+	padding-right: 12.5px;
+	text-align: center; 
+	color: white;
+	font-size: 14px;
+}
+
+.extbar img {
+	width: 60px;
+	padding: 10px;
+}
+
+@media screen and (min-width: 975px) {
+	.layoutAC1:hover {
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 975px) {
+	.layoutAC1 > a div text, .layoutAC1 > form {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.layoutAC1 {
+		width: 20%;
+	}
+}
+
+.layoutAC2 {
+	position: relative;
+	top: 120px;
+	float: left;
+	width: 70%;
+	padding: 10px;
+}

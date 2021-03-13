@@ -1,0 +1,74 @@
+html, body {
+	position: relative;
+	min-height: 100%;
+	height: 100%;
+	padding-bottom: 0px;
+}
+
+body {
+	margin-top: 0px;
+	overflow-y: scroll;
+}
+
+#root {
+	min-height: 100vh; 
+ 	overflow: hidden;
+ 	display: block;
+ 	position: relative;
+}
+
+#homebody {
+	height: 900px;
+}
+
+#aboutbody {
+	position: relative;
+	height: 100%;
+	padding-top: 120px; /* move up and down along with the root */
+	padding-bottom: 430px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#aboutbody div {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#projectsbody {
+	position: relative;
+	height: 100%;
+	padding-top: 120px; /* move up and down along with the root */
+}
+
+#msbody {
+	height: 100%;
+	padding-top: 120px; /* move up and down along with the root */
+	padding-bottom: 430px;
+	background-color: #7a7878;
+}
+
+footer {
+	margin-bottom: -50px;
+	height: 200px;
+   	width: 100%;
+   	background-color: #505050;
+   	color: white;
+   	text-align: center;
+   	position: relative;
+   	bottom: 0;
+}
+
+#mainfootertext {
+	text-align: left;
+	font-size: 15px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 30px;
+}
+
+#mainfootertext a, #mainfootertext a:hover, #mainfootertext a:visited {
+	text-decoration: none;
+	color: white;
+}
+
